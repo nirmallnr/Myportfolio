@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lokesh Nirmal Raja - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Loader -->
+    <div id="loader" class="loader-container">
+        <div class="loader">
+            <div class="loader-ring"></div>
+            <div class="loader-text">LNR</div>
+        </div>
+    </div>
+
+    <!-- Particles Background -->
+    <canvas id="particles-canvas"></canvas>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="nav-logo">
+                <span class="logo-text">LNR</span>
+            </a>
+            <div class="nav-menu" id="nav-menu">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#experience" class="nav-link">Experience</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#education" class="nav-link">Education</a>
+                <a href="#publications" class="nav-link">Publications</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+            <div class="nav-toggle" id="nav-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <div class="hero-greeting">Hi, I'm</div>
+                <h1 class="hero-name">
+                    <span class="name-first">Lokesh Nirmal Raja</span>
+                </h1>
+                <div class="hero-title">
+                    <span class="typing-text" id="typing-text"></span>
+                </div>
+                <p class="hero-description">
+                    Statistical Programmer experienced in study level SDTM, ADaM, and 
+			Safety/Efficacy TLF development and validation, with involvement in 
+			submission activities and a proven record of timely, high quality 
+			ad hoc deliverables.
+			Hands on experience with SAS, R, and Phoenix WinNonlin.
+
+                </p>
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn btn-primary">Get In Touch</a>
+                    <a href="#experience" class="btn btn-secondary">View Work</a>
+                </div>
+                <div class="hero-social">
+                    <a href="mailto:lokeshnirmal11@gmail.com" class="social-link" aria-label="Email">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/lokesh-nirmal-raja-a-4377b2134" target="_blank" class="social-link">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://github.com/nirmallnr" target="_blank" class="social-link">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="image-wrapper">
+                    <img src="Lokesh.jpg" alt="Lokesh ">
+                    <div class="image-glow"></div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="about-container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p class="about-intro">
+                        I am an experienced Statistical Programmer in Clinical Research and Biostatistics 
+			within the pharmaceutical industry, currently working at <span class="highlight">
+			Pfizer Healthcare India Private Limited</span>. My expertise includes SAS programming,
+			R, CDISC standards (SDTM/ADaM), and TLF generation to support regulatory submissions.
+                    </p>
+                    <p>
+                        I have hands on experience in integrated safety and efficacy analyses, pharmacokinetic 
+			analysis using Phoenix WinNonlin, and dataset validation with Pinnacle 21, ensuring high quality, 
+			submission ready deliverables. Previously, I worked at <span class="highlight">Azidus Laboratories
+			 Ltd.</span> and <span class="highlight">Micro Therapeutic Research Labs Pvt. Ltd.,</span> where 
+			I developed a strong foundation in clinical trial data management, compliance, and regulatory standards.
+                    </p>
+                    <p>
+                    I am passionate about transforming complex clinical data into reliable insights that support drug development 
+			and informed regulatory decision making.
+			<span class="highlight">Technical Skills:</span>
+			SAS | R | CDISC (SDTM, ADaM) | TLF Programming | PK Analysis | Phoenix WinNonlin | Pinnacle 21 | EDC | Regulatory Submissions | ICH GCP
+
+                    </p>
+                    <div class="about-stats">
+                        <div class="stat-card">
+                            <div class="stat-number">5+</div>
+                            <div class="stat-label">Years Experience</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-number">20+</div>
+                            <div class="stat-label">Clinical Projects</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+        <div class="experience-container">
+            <h2 class="section-title">Work Experience</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-icon"><i class="fas fa-briefcase"></i></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <div>
+                                <h3 class="timeline-role">Associate Statistical Data Scientist</h3>
+                                <h4 class="timeline-company">Pfizer</h4>
+                                <p class="timeline-location">Chennai, India</p>
+                            </div>
+                            <span class="timeline-period">Sep 2023 – Present</span>
+                        </div>
+                        <ul class="timeline-achievements">
+                        <li>To read and understand the Study documents (Protocol, CRF, Dataset specifications, SAP, Mock shells, etc.) </li>
+			<li>Creating SAS programs and producing outputs to support the analysis and reporting of clinical trials</li>
+			<li>Developing analysis datasets for individual studies as well as integrated safety and efficacy analysis</li>
+			<li>Programming standard and custom data listings, summary tables, and graphs as specified in the statistical analysis plan. </li>
+			<li>To develop or validate the assigned SDTM, ADaM datasets, and Tables, Listings, Figures (TLFs) </li>
+			<li>Generating Data transfers, Analysis outputs, Patient Profiles, Standard and Custom data listings, Decision report to support 
+				adjudication and Data Monitoring committee. </li>
+			<li>To ensure completion of organization-specific training documentation on a timely basis. </li>
+
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-icon"><i class="fas fa-briefcase"></i></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <div>
+                                <h3 class="timeline-role">Statistician</h3>
+                                <h4 class="timeline-company">AZIDUS LABORATORIES LTD</h4>
+                                <p class="timeline-location">Chennai, India</p>
+                            </div>
+                            <span class="timeline-period">Aug 2022 – Aug 2023</span>
+                        </div>
+                        <ul class="timeline-achievements">
+                        <li>Organizing and performing clinical research studies conducted by Principle Investigator. </li>
+			<li>Verification of Protocol deviation for the study. </li>
+			<li>Coordinate with protocol preparation team in designing the protocol and statistical analytical plan (SAP). </li>
+			<li>To generate randomization for the study. </li>
+			<li>Analysis of pharmacokinetic parameter using appropriate software such as Phoenix" WinNonlin, SAS. </li>
+			<li>Preparation and review of pharmacokinetic, statistical report and standard operating procedure. </li>
+			<li>Generation of TLFS from SDTM datasets using SAS. </li>
+			<li>Spread Sheet validation using SAS. </li>
+			<li>Validation of datasets using Pinnacle Software. </li>
+			<li>Perform project planning for data management and study specific procedure including the maintaining study files TMF, CRF or eCRF and closed the discrepancies in 					EDC setup. </li>
+
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-icon"><i class="fas fa-briefcase"></i></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <div>
+                                <h3 class="timeline-role">Clinical Data Management Associate</h3>
+                                <h4 class="timeline-company">AZIDUS LABORATORIES LTD</h4>
+                                <p class="timeline-location">Chennai, India</p>
+                            </div>
+                            <span class="timeline-period">Sep 2021 – Aug 2022</span>
+                        </div>
+                        <ul class="timeline-achievements">
+                            <li>Organizing and performing clinical research studies conducted by Principle Investigator. </li>
+			<li>Preparation of datasets - SDTM, ADaM domains and CDISC terminology. </li>
+			<li>Verification of Protocol deviation for the study. </li>
+			<li>Study data captured by using electronic data capture (EDC). </li>
+			<li>Creation and Validation of CDISC SDTM and ADaM datasets. </li>
+			<li>Generation of TLFS from SDTM datasets using SAS. </li>
+			<li>Spread Sheet validation using SAS. </li>
+			<li>Perform project planning for data management and study specific procedure including the maintaining study files TMF, CRF or eCRF and closed the discrepancies in EDC setup. </li>
+
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-icon"><i class="fas fa-briefcase"></i></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <div>
+                                <h3 class="timeline-role">Clinical Research Associate</h3>
+                                <h4 class="timeline-company">Micro Therapeutic Research Labs Private Limited</h4>
+                                <p class="timeline-location">Chennai, India</p>
+                            </div>
+                            <span class="timeline-period">Jun 2021 – May 2023</span>
+                        </div>
+                        <ul class="timeline-achievements">
+                            <li> Monitoring the clinical studies for their compliance to protocol, SOPs and guidelines and ensuring the filing of SOPs / protocol deviations (Blood 					collection, vitals and others) </li>
+			<li> Monitoring safety of the subjects during their in-house stay and post study requirements</li>
+			<li> Responsible for ensuring preparation of study related documents (clinical study updates) with in stipulated time and as per the applicable regulatory 					requirements. </li>
+			<li> Responsible for the management of preparation and revision of SOP’S related to clinical activities and SOP’S maintenance. </li>
+			<li> Screening of urine sample for drug of abuse</li>
+			<li> Handling subject check-in and check-out procedures</li>
+			<li> Responsible for administration of investigational products</li>
+			<li> Arrangement for conducting pre study</li>
+			<li> Ensure making of correct and on-line entries of the relevant forms. </li>
+			<li> Ensure the study specific documents before commencement the study. </li>
+			<li> Responsible for CA/PA response to QA audit and online documentation</li>
+
+                        </ul>
+                    </div>
+                </div>
+
+                    </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="skills-container">
+            <h2 class="section-title">Skills & Expertise</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3 class="category-title">Programming Languages</h3>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <div class="skill-name"><i class="fas fa-code"></i> SAS</div>
+                                <span class="skill-percentage">85%</span>
+                            </div>
+                            <div class="skill-bar"><div class="skill-progress" style="width: 85%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <div class="skill-name"><i class="fas fa-code"></i> R(Base)</div>
+                                <span class="skill-percentage">40%</span>
+                            </div>
+                            <div class="skill-bar"><div class="skill-progress" style="width: 40%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <div class="skill-name"><i class="fas fa-code"></i> Phoenix WinNonlin</div>
+                                <span class="skill-percentage">80%</span>
+                            </div>
+                            <div class="skill-bar"><div class="skill-progress" style="width: 80%"></div></div>
+                        </div>
+                       
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <div class="skill-name"><i class="fab fa-html5"></i> HTML</div>
+                                <span class="skill-percentage">70%</span>
+                            </div>
+                            <div class="skill-bar"><div class="skill-progress" style="width: 70%"></div></div>
+                        </div>
+ 			<div class="skill-item">
+                            <div class="skill-header">
+                                <div class="skill-name"><i class="fab fa-linux"></i> Linux</div>
+                                <span class="skill-percentage">80%</span>
+                            </div>
+                            <div class="skill-bar"><div class="skill-progress" style="width: 80%"></div></div>
+                        </div>
+
+                    </div>
+                </div>
+
+                
+
+                <div class="skill-category">
+                    <h3 class="category-title">Tools & Technologies</h3>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <div class="skill-name"><i class="fas fa-file-excel"></i> Excel</div>
+                                <span class="skill-percentage">90%</span>
+                            </div>
+                            <div class="skill-bar"><div class="skill-progress" style="width: 90%"></div></div>
+                        </div>
+
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <div class="skill-name"><i class="fas fa-file-word"></i> Word</div>
+                                <span class="skill-percentage">85%</span>
+                            </div>
+                            <div class="skill-bar"><div class="skill-progress" style="width: 85%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <div class="skill-name"><i class="fas fa-file-powerpoint"></i> PowerPoint</div>
+                                <span class="skill-percentage">85%</span>
+                            </div>
+                            <div class="skill-bar"><div class="skill-progress" style="width: 85%"></div></div>
+                        </div>
+
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <div class="skill-name"><i class="fab fa-git-alt"></i> Git/GitHub</div>
+                                <span class="skill-percentage">85%</span>
+                            </div>
+                            <div class="skill-bar"><div class="skill-progress" style="width: 85%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <div class="skill-name"><i class="fab fa-linux"></i>Photoshop PS6</div>
+                                <span class="skill-percentage">80%</span>
+                            </div>
+                            <div class="skill-bar"><div class="skill-progress" style="width: 80%"></div></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3 class="category-title">Clinical & Specialized Skills</h3>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <div class="skill-name"><i class="fas fa-dna"></i> SDTM/ADaM</div>
+                                <span class="skill-percentage">70%</span>
+                            </div>
+                            <div class="skill-bar"><div class="skill-progress" style="width: 70%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <div class="skill-name"><i class="fas fa-laptop-code"></i> TLF</div>
+                                <span class="skill-percentage">95%</span>
+                            </div>
+                            <div class="skill-bar"><div class="skill-progress" style="width: 95%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <div class="skill-name"><i class="fas fa-microscope"></i> Clinical Programming</div>
+                                <span class="skill-percentage">85%</span>
+                            </div>
+                            <div class="skill-bar"><div class="skill-progress" style="width: 85%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <div class="skill-name"><i class="fas fa-dna"></i> Ad-hoc's</div>
+                                <span class="skill-percentage">80%</span> 
+                            </div>
+                            <div class="skill-bar"><div class="skill-progress" style="width: 80%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <div class="skill-name"><i class="fas fa-flask"></i> Drug Development</div>
+                                <span class="skill-percentage">75%</span>
+                            </div>
+                            <div class="skill-bar"><div class="skill-progress" style="width: 75%"></div></div>
+                        </div>
+                    </div>
+                </div>
+
+       
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="education">
+        <div class="education-container">
+            <h2 class="section-title">Education & Achievements</h2>
+            <div class="education-content">
+                <div class="education-card main-degree">
+                    <div class="card-icon"><i class="fas fa-graduation-cap"></i></div>
+                    <h3>M.Sc. Statistics </h3>
+                    <h4>Bharathidasan University - Trichy, India</h4>
+                    <p class="period">June 2018 - May 2020</p>
+                    <p class="gpa">CGPA: 7.55</p>
+                </div>
+
+            <div class="education-content">
+                <div class="education-card main-degree">
+                    <div class="card-icon"><i class="fas fa-graduation-cap"></i></div>
+                    <h3>B.Sc. Statistics (5 Year Integrated)</h3>
+                    <h4>St. Joseph’s College, Bharathidasan University - Trichy, India</h4>
+                    <p class="period">June 2015 - May 2018</p>
+                    <p class="gpa">CGPA: 6.13</p>
+                </div>
+
+                <div class="certifications-section">
+                    <h3 class="subsection-title"><i class="fas fa-certificate"></i> Certifications</h3>
+                    <div class="cert-list">
+                        <div class="cert-item">
+                            <div class="cert-bullet"></div>
+                            <div>
+                                <h4>ADVANCED SAS WITH CLINICAL SAS</h4>
+                                <p>FITA Academy, Chennai</p>
+                            </div>
+                        </div>
+                        <div class="cert-item">
+                            <div class="cert-bullet"></div>
+                            <div>
+                                <h4>A Deep Dive: FDA Draft Guidance on Statistical Approaches to Establishing Bioequivalence Webinar</h4>
+                                <p>FDA Webinar</p>
+                            </div>
+                        </div>
+
+
+
+
+                        <div class="cert-item">
+                            <div class="cert-bullet"></div>
+                            <div>
+                                <h4>Electronic Systems, Electronic Records, and Electronic Signatures Webinar</h4>
+                                <p>FDA Webinar</p>
+                            </div>
+                        </div>                        <div class="cert-item">
+                            <div class="cert-bullet"></div>
+                            <div>
+                                <h4>ICH Guidelines for Good Clinical Practice E6 (R2)</h4>
+                                <p>Azidus Laboratories Limited, Chennai</p>
+                            </div>
+                        </div>                        <div class="cert-item">
+                            <div class="cert-bullet"></div>
+                            <div>
+                                <h4>ICH-GCP Workshop on Clinical Research</h4>
+                                <p>Azidus Laboratories Limited, Chennai</p>
+                            </div>
+                        </div>                        <div class="cert-item">
+                            <div class="cert-bullet"></div>
+                            <div>
+                                <h4>ICH-GCP Principles and New Drugs and Clinical Trial Rules, 2019</h4>
+                                <p>Webinar Training Azidus</p>
+                            </div>
+                        </div>                        <div class="cert-item">
+                            <div class="cert-bullet"></div>
+                            <div>
+                                <h4>BIGDATA ANALYTICS USING EVIEWS, R AND PYTHON</h4>
+                                <p>Three days’ workshop at PERIYAR UNIVERSITY, Salem</p>
+                            </div>
+                        </div>                        <div class="cert-item">
+                            <div class="cert-bullet"></div>
+                            <div>
+                                <h4>Linear Regression using PYTHON</h4>
+                                <p>Training on Webinar by Codegnan IT Solutions OPC PVT. LTD</p>
+                            </div>
+                        </div>                        <div class="cert-item">
+                            <div class="cert-bullet"></div>
+                            <div>
+                                <h4>NSS Services during the period of 2015 to 2017</h4>
+                                <p>St. Joseph’s College, Bharathidasan University</p>
+                            </div>
+                        </div>                        
+
+
+                       </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+   
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="contact-container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Let's Connect</h3>
+                    <p class="contact-description">
+                        I'm always open to discussing new opportunities, collaborations, and discussions on biostatistics, 
+			data science, and clinical trials. Feel free to reach out!</p>
+                    
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+                            <div class="contact-text">
+                                <h4>Email</h4>
+                                <a href="mailto:lokeshnirmal11@gmail.com">lokeshnirmal11@gmail.com</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon"><i class="fas fa-phone"></i></div>
+                            <div class="contact-text">
+                                <h4>Phone</h4>
+                                <a href="tel:+917200387510">+91 7200387510</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+                            <div class="contact-text">
+                                <h4>Location</h4>
+                                <p>Tamil Nadu, India</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact-social">
+                        <h4>Connect on Social Media</h4>
+                        <div class="social-links">
+                            <a href="https://www.linkedin.com/in/lokesh-nirmal-raja-a-4377b2134" target="_blank" class="social-btn">
+                                <i class="fab fa-linkedin"></i> <span>LinkedIn</span>
+                            </a>
+                            <a href="https://github.com/nirmallnr" target="_blank" class="social-btn">
+                                <i class="fab fa-github"></i> <span>GitHub</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form-wrapper">
+                    <form class="contact-form" id="contact-form">
+                        <div class="form-group">
+                            <input type="text" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" placeholder="Subject" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea placeholder="Your Message" rows="6" required></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">Send Message</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="footer">
+                <p>&copy; 2025 Lokesh Nirmal Raja. All rights reserved.</p>
+                <p>Special Thanks to Mageshwaran Maran </p>
+
+                <p class="footer-tagline">Transforming Data into Insights</p>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
